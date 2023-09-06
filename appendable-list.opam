@@ -1,0 +1,23 @@
+opam-version: "2.0"
+synopsis: "A datastructure supporting constant time append operations"
+description: "A datastructure supporting constant time append operations"
+maintainer: "Mathieu Barbin"
+authors: "Mathieu Barbin"
+license: "MIT"
+homepage: "https://github.com/mbarbin/appendable-list"
+doc: "https://github.com/mbarbin/appendable-list"
+bug-reports: "https://github.com/mbarbin/appendable-list/issues"
+depends: [
+  "ocaml" {>= "5.0"}
+  "dune" {>= "3.9"}
+  "base" {>= "v0.16" & < "v0.17"}
+  "ppx_sexp_conv" {>= "v0.16" & < "v0.17"}
+  "core" {>= "v0.16" & < "v0.17" & with-test}
+  "ppx_jane" {>= "v0.16" & < "v0.17" & with-test}
+]
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+dev-repo: "git+https://github.com/mbarbin/appendable-list.git"
