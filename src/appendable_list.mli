@@ -37,4 +37,8 @@ val to_sequence : 'a t -> 'a Sequence.t
 include Monad.S with type 'a t := 'a t
 include Container.S1 with type 'a t := 'a t
 
-val map_simple : 'a t -> f:('a -> 'b) -> 'b t
+module For_testing : sig
+  (** A reference implementation of [map] that is perhaps not as efficient but more
+      obviously correct. *)
+  val map_simple : 'a t -> f:('a -> 'b) -> 'b t
+end

@@ -247,13 +247,13 @@ include struct
   let all_unit = all_unit
 end
 
-(* A reference implementation of [map] that is perhaps not as efficient but more
-   obviously correct. *)
-let rec map_simple t ~f =
-  match t with
-  | Empty -> Empty
-  | Singleton a -> Singleton (f a)
-  | List (a, b, cs) -> List (f a, f b, List.map cs ~f)
-  | Node (a, b, cs) ->
-    Node (map_simple a ~f, map_simple b ~f, List.map cs ~f:(map_simple ~f))
-;;
+module For_testing = struct
+  let rec map_simple t ~f =
+    match t with
+    | Empty -> Empty
+    | Singleton a -> Singleton (f a)
+    | List (a, b, cs) -> List (f a, f b, List.map cs ~f)
+    | Node (a, b, cs) ->
+      Node (map_simple a ~f, map_simple b ~f, List.map cs ~f:(map_simple ~f))
+  ;;
+end
