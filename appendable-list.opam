@@ -9,11 +9,11 @@ doc: "https://mbarbin.github.io/appendable-list/"
 bug-reports: "https://github.com/mbarbin/appendable-list/issues"
 depends: [
   "dune" {>= "3.13"}
-  "ocaml" {>= "5.0"}
+  "ocaml" {>= "5.1"}
   "base" {>= "v0.16" & < "v0.17"}
+  "core" {with-test & >= "v0.16" & < "v0.17"}
+  "ppx_jane" {with-test & >= "v0.16" & < "v0.17"}
   "ppx_sexp_conv" {>= "v0.16" & < "v0.17"}
-  "core" {>= "v0.16" & < "v0.17" & with-test}
-  "ppx_jane" {>= "v0.16" & < "v0.17" & with-test}
   "odoc" {with-doc}
 ]
 build: [

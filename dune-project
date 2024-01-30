@@ -20,22 +20,22 @@
  (synopsis "A datastructure supporting constant time append operations")
  (depends
   (ocaml
-   (>= 5.0))
+   (>= 5.1))
   (base
-   (and
-    (>= v0.16)
-    (< v0.17)))
-  (ppx_sexp_conv
    (and
     (>= v0.16)
     (< v0.17)))
   (core
    (and
+    :with-test
     (>= v0.16)
-    (< v0.17)
-    :with-test))
+    (< v0.17)))
   (ppx_jane
    (and
+    :with-test
     (>= v0.16)
-    (< v0.17)
-    :with-test))))
+    (< v0.17)))
+  (ppx_sexp_conv
+   (and
+    (>= v0.16)
+    (< v0.17)))))
