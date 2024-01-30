@@ -1,4 +1,4 @@
-(lang dune 3.5)
+(lang dune 3.13)
 
 (name appendable-list)
 
@@ -21,8 +21,6 @@
  (depends
   (ocaml
    (>= 5.0))
-  (dune
-   (>= 3.9))
   (base
    (and
     (>= v0.16)
