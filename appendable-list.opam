@@ -3,7 +3,7 @@ opam-version: "2.0"
 synopsis: "A datastructure supporting constant time append operations"
 description: "A datastructure supporting constant time append operations"
 maintainer: ["Mathieu Barbin"]
-authors: ["Mathieu Barbin"]
+authors: ["Jane Street Group, LLC"]
 license: "MIT"
 homepage: "https://github.com/mbarbin/appendable-list"
 doc: "https://mbarbin.github.io/appendable-list/"
