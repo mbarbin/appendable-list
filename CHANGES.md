@@ -1,3 +1,7 @@
+## v0.17.0 (unreleased)
+
+No changes - upgrading dependencies only.
+
 ## v0.16.3 (2024-03-13)
 
 ### Changed
