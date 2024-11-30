@@ -15,6 +15,8 @@
 
 (documentation "https://mbarbin.github.io/appendable-list/")
 
+(implicit_transitive_deps false)
+
 (package
  (name appendable-list)
  (synopsis "A datastructure supporting constant time append operations")
