@@ -192,7 +192,7 @@ let%test_module "individual test cases" =
      module For_testing = For_testing
    end
    (* This signature is here to remind us to update the unit tests whenever we change
-     [Appendable_list]. *) :
+      [Appendable_list]. *) :
      module type of Appendable_list))
 ;;
 
@@ -488,7 +488,7 @@ let%test_module "semantics" =
      ;;
 
      (* The rest of the container implementation is defined by [fold], [iter], and
-       [length]. *)
+        [length]. *)
      let count = count
      and exists = exists
      and find = find
