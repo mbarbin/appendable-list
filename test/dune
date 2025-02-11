@@ -1,7 +1,7 @@
 (library
  (name appendable_list_test)
  (flags -w +a-4-40-41-42-44-66 -warn-error +a)
- (libraries core appendable-list)
+ (libraries appendable-list core)
  (inline_tests)
  (preprocess
   (pps ppx_jane)))
