@@ -19,7 +19,7 @@
 
 (package
  (name appendable-list)
- (synopsis "A datastructure supporting constant time append operations")
+ (synopsis "A data structure supporting constant time append operations")
  (depends
   (ocaml
    (>= 5.2))
