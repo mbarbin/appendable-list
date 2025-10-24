@@ -10,7 +10,7 @@ bug-reports: "https://github.com/mbarbin/appendable-list/issues"
 depends: [
   "dune" {>= "3.17"}
   "ocaml" {>= "5.2"}
-  "ocamlformat" {with-dev-setup & = "0.27.0"}
+  "ocamlformat" {with-dev-setup & = "0.28.1"}
   "base" {>= "v0.17"}
   "core" {with-test & >= "v0.17"}
   "ppx_jane" {with-test & >= "v0.17"}
