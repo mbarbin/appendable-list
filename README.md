@@ -1,5 +1,9 @@
 # appendable-list
 
+:warning: This repository is now a public archive. I have stopped developing the project and will not be maintaining it forward.
+
+---
+
 [![CI Status](https://github.com/mbarbin/appendable-list/workflows/ci/badge.svg)](https://github.com/mbarbin/appendable-list/actions/workflows/ci.yml)
 
 This library offers a repackaging of `Core_extended`'s `Appendable_list`, as a standalone opam package.
